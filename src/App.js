@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import './component/day2/MyName';
 import './App.css';
+import MyName from './component/day2/MyName';
+import MyNameFunction from './component/day2/MyNameFunction';
+import Counter from './component/day2/Counter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MyName/> */}
+      {/* <MyNameFunction name="React"/> */}
+      <Counter/>
     </div>
   );
 }
