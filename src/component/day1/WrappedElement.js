@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+// 최상위 태그는 1개만 올 수 있습니다.
+
 export default class WrappedElement extends Component {
     render(){
         return (
