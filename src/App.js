@@ -9,6 +9,7 @@ import Comment2 from './component/day2/Comment2';
 import Comment3 from './component/day2/Comment3';
 import Lifecycle from './component/day2/Lifecycle';
 import Toggle from './component/day2/Toggle';
+import AttendanceBook from './component/day2/AttendanceBook';
 
 // Comment 데이터를 별도의 객체로 분리
 /*
@@ -22,6 +23,9 @@ const comments = [
 function App() {
   return (
     <div className="App">
+      {/* element 예제 */}
+      {/* App.js에 있음 */}
+
       {/* ===간단한 Props 예제====================================== */}
       {/* <MyName/> */}
       {/* <MyNameFunction name="React"/> */}
@@ -44,6 +48,9 @@ function App() {
       
       {/* ===State 예제====================================== */}
       {/* <Counter/> */}
+      {/* 아래 예제 App class */}
+      {/* ===map 예제====================================== */}
+      {/* <AttendanceBook></AttendanceBook> */}
 
       {/* Event 예제 */}
       {/* <Toggle></Toggle> */}
@@ -60,7 +67,7 @@ function App() {
 //       comments: [
 //         {name:'Naram Kim', content: 'Comment!'},
 //         {name:'철수', content: '안녕하세요~!'},
-//         {name:'맹구', content: '안녕...'},
+//         {name:'맹구', content: '안녕...'}
 //       ]
 //     }
 //   }
@@ -79,7 +86,7 @@ function App() {
 //           })}
 
 //           {/* React Lifecycle */}
-//           <Lifecycle name='Naram Kim' content='Comment!'></Lifecycle>
+//           {/* <Lifecycle name='Naram Kim' content='Comment!'></Lifecycle> */}
 //       </div>
 //     );
 //   }
