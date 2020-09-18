@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './component/day2/MyName';
 import './App.css';
 import MyName from './component/day2/MyName';
 import MyNameFunction from './component/day2/MyNameFunction';
@@ -12,84 +11,78 @@ import Toggle from './component/day2/Toggle';
 import AttendanceBook from './component/day2/AttendanceBook';
 
 // Comment 데이터를 별도의 객체로 분리
-/*
-const comments = [
-  {name:'Naram Kim', content: 'Comment!'},
-  {name:'철수', content: '안녕하세요~!'},
-  {name:'맹구', content: '안녕...'},
-]
-*/
+// const comments = [
+//   {name:'Naram Kim', content: 'Comment!'},
+//   {name:'철수', content: '안녕하세요~!'},
+//   {name:'맹구', content: '안녕...'},
+// ]
 
-function App() {
-  return (
-    <div className="App">
-      {/* element 예제 */}
-      {/* App.js에 있음 */}
-
-      {/* ===간단한 Props 예제====================================== */}
-      {/* <MyName/> */}
-      {/* <MyNameFunction name="React"/> */}
-      
-      {/* ===Comment 컴포넌트 작성====================================== */}
-      {/* <Comment1></Comment1> */}
-      
-      {/* ===Comment에 Props 적용====================================== */}
-      {/* <Comment2 name='Naram Kim' content='Comment!'></Comment2>
-      <Comment2 name='철수' content='안녕하세요~!'></Comment2> */}
-
-      {/*  Comment 데이터를 별도의 객체로 분리하기  */}
-      {/* {comments.map((comment, index) => {
-        return (
-          <Comment2 
+class App extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      comments: [
+        {name:'Naram Kim', content: 'Comment!'},
+        {name:'철수', content: '안녕하세요~!'},
+        {name:'맹구', content: '안녕...'}
+      ]
+    }
+  }
+  
+  render() {
+    const {comments} = this.state;
+    
+    return (
+      <div>
+        {/* ===element 예제====================================== */}
+        {/* App.js에 있음 */}
+        
+        {/* ===간단한 Props 예제====================================== */}
+        {/* <MyName/> */}
+        {/* <MyNameFunction name="React"/> */}
+        
+        {/* ===Comment 컴포넌트 작성====================================== */}
+        {/* <Comment1></Comment1> */}
+        
+        {/* ===Comment에 Props 적용====================================== */}
+        {/* <Comment2 name='Naram Kim' content='Comment!'></Comment2>
+        <Comment2 name='철수' content='안녕하세요~!'></Comment2> */}
+        
+        {/*  Comment 데이터를 별도의 객체로 분리하기  */}
+        {/* {comments.map((comment, index) => {
+          return (
+            <Comment2 
+              name={comment.name} 
+              content={comment.content}/>
+          );
+        })} */}
+        
+        {/* ===State 예제====================================== */}
+        {/* <Counter/> */}
+        
+        {/* 아래 예제 App class */}
+        
+        {/* ===map 예제====================================== */}
+        {/* <AttendanceBook></AttendanceBook> */}
+        
+        {/* {comments.map((comment, index) => {
+          return (
+            <Comment3
             name={comment.name} 
             content={comment.content}/>
-        );
-      })} */}
-      
-      {/* ===State 예제====================================== */}
-      {/* <Counter/> */}
-      {/* 아래 예제 App class */}
-      {/* ===map 예제====================================== */}
-      {/* <AttendanceBook></AttendanceBook> */}
+            );
+          })} */}
+        
+        {/* ===React Lifecycle====================================== */}
+        {/* <Lifecycle name='Naram Kim' content='Comment!'></Lifecycle> */}
+        
+        {/* ===Event 예제====================================== */}
+        {/* <Toggle></Toggle> */}
 
-      {/* Event 예제 */}
-      {/* <Toggle></Toggle> */}
-    </div>
-  );
+      </div>
+    );
+  }
 }
-
-
-// class App extends Component {
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//       comments: [
-//         {name:'Naram Kim', content: 'Comment!'},
-//         {name:'철수', content: '안녕하세요~!'},
-//         {name:'맹구', content: '안녕...'}
-//       ]
-//     }
-//   }
-  
-//   render() {
-//     const {comments} = this.state;
-    
-//     return (
-//       <div>
-//         {comments.map((comment, index) => {
-//           return (
-//             <Comment3
-//             name={comment.name} 
-//             content={comment.content}/>
-//             );
-//           })}
-
-//           {/* React Lifecycle */}
-//           {/* <Lifecycle name='Naram Kim' content='Comment!'></Lifecycle> */}
-//       </div>
-//     );
-//   }
-// }
 
 export default App;

@@ -14,6 +14,7 @@ export default class AttendanceBook extends Component {
                 {name: 'Leo'},
                 {name: 'John'},
                 {name: 'Sam'}
+                // key에 객체 id를 넣는 방법
                 // {id: 1, name: 'Mike'},
                 // {id: 2,name: 'Jane'},
                 // {id: 3,name: 'Susan'},
