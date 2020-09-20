@@ -9,6 +9,7 @@ import {createStore} from 'redux';
 import reducers from './component/day3/reducers/';
 import * as actions from './component/day3/actions';
 import { Provider } from 'react-redux';
+import App4 from './App4';
 
 // element 예제
 // function tick() {
@@ -61,9 +62,12 @@ ReactDOM.render(
 
     {/* Redux 예제 */}
     {/* 컴포넌트에서 Redux를 사용하도록 제공해주는 컴포넌트 */}
-    <Provider store={store}>
+    {/* <Provider store={store}>
       <App3/>
-    </Provider>
+    </Provider> */}
+
+    {/* Router 예제 */}
+    <App4/>
   </React.StrictMode>,
   document.getElementById('root')
 );
