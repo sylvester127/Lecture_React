@@ -91,6 +91,13 @@ npm run start:backend
 
 자세한 내용은 [Create React App 문서](https://create-react-app.dev/docs/getting-started)를 참조하세요.
 
-## React 학습 자료
+## 학습 자료
+
+### React 학습 자료
 
 *   [React 공식 문서](https://react.dev/)
+
+### Node.js / Express.js 학습 자료
+
+*   [Node.js 공식 문서 (HTTP 모듈)](https://nodejs.org/docs/latest/api/http.html)
+*   [Express.js 공식 문서](https://expressjs.com/)
