@@ -21,7 +21,7 @@ React Lecture/
 │   │   ├───controllers/        # 요청 처리 로직 (라우트에서 호출)
 │   │   ├───services/           # 비즈니스 로직, 데이터 조작 (컨트롤러에서 호출)
 │   │   └───utils/              # 유틸리티 함수 (예: 에러 처리, 유효성 검사)
-│   └───package.json        # 백엔드 의존성
+
 └───frontend/           # React 프론트엔드 애플리케이션
     ├───public/         # 정적 파일 (index.html 등)
     └───src/            # 프론트엔드 소스 코드
@@ -55,7 +55,7 @@ React Lecture/
     git clone [저장소 URL]
     cd React Lecture
     ```
-2.  **의존성 설치:**
+2.  **의존성 설치:** (프로젝트 루트에서 실행)
     ```bash
     npm install
     # 또는 yarn install
