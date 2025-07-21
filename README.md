@@ -6,12 +6,17 @@
 
 ```
 React Lecture/
-├───backend/            # Node.js 백엔드 (나중에 구현)
-└───frontend/           # React 프론트엔드
-    ├───public/
-    ├───src/
-        ├───App.js              # 메인 애플리케이션 (개념별 예제로 이동하는 허브 역할)
-        ├───index.js            # 애플리케이션 진입점
+├───.git/               # Git 버전 관리 정보
+├───node_modules/       # 프로젝트 의존성 (루트에서 관리)
+├───backend/            # Node.js 백엔드 (현재 비어있음, 추후 구현 예정)
+└───frontend/           # React 프론트엔드 애플리케이션
+    ├───public/         # 정적 파일 (index.html 등)
+    └───src/            # 프론트엔드 소스 코드
+        ├───App.js              # 메인 애플리케이션 컴포넌트 (개념별 예제로 이동하는 허브 역할)
+        ├───App.test.js         # App 컴포넌트 테스트 파일
+        ├───index.js            # 애플리케이션 진입점 (React DOM 렌더링)
+        ├───serviceWorker.js    # PWA를 위한 서비스 워커
+        ├───setupTests.js       # 테스트 환경 설정
         ├───assets/             # 이미지, 아이콘 등 정적 자산
         ├───styles/             # 전역 CSS 파일
         └───concepts/           # React 개념/기능별 예제
@@ -22,6 +27,10 @@ React Lecture/
             ├───hooks/          # useState, useEffect 등 훅스 (현재 예제 없음, 추후 추가 가능)
             ├───redux/          # Redux 통합 (actions, reducers 포함)
             └───routing/        # React Router
+├───.gitignore          # Git 무시 파일 (전체 프로젝트에 적용)
+├───package-lock.json   # 정확한 의존성 버전 기록
+├───package.json        # 프로젝트 메타데이터 및 의존성
+└───README.md           # 프로젝트 설명 (현재 파일)
 ```
 
 ## 시작하기
@@ -31,7 +40,7 @@ React Lecture/
 1.  **저장소 클론:**
     ```bash
     git clone [저장소 URL]
-    cd React Lecture/frontend
+    cd React Lecture
     ```
 2.  **의존성 설치:**
     ```bash
@@ -40,6 +49,7 @@ React Lecture/
     ```
 3.  **애플리케이션 실행:**
     ```bash
+    cd frontend
     npm start
     # 또는 yarn start
     ```
