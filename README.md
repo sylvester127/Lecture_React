@@ -8,7 +8,20 @@
 React Lecture/
 ├───.git/               # Git 버전 관리 정보
 ├───node_modules/       # 프로젝트 의존성 (루트에서 관리)
-├───backend/            # Node.js 백엔드 (현재 비어있음, 추후 구현 예정)
+├───backend/            # Node.js 백엔드
+│   ├───src/            # 백엔드 소스 코드
+│   │   ├───index.js            # 백엔드 서버의 메인 진입점
+│   │   ├───config/             # 설정 파일 (예: 데이터베이스 연결, 환경 변수)
+│   │   ├───middleware/         # 커스텀 미들웨어 (예: 인증, 로깅)
+│   │   ├───models/             # 데이터베이스 모델 (예: Mongoose 스키마, Sequelize 모델)
+│   │   ├───routes/             # API 라우트/엔드포인트
+│   │   │   ├───auth.js         # 인증 관련 라우트 (예: 로그인, 회원가입)
+│   │   │   ├───users.js        # 사용자 관리 라우트
+│   │   │   └───products.js     # 예시 리소스 라우트
+│   │   ├───controllers/        # 요청 처리 로직 (라우트에서 호출)
+│   │   ├───services/           # 비즈니스 로직, 데이터 조작 (컨트롤러에서 호출)
+│   │   └───utils/              # 유틸리티 함수 (예: 에러 처리, 유효성 검사)
+│   └───package.json        # 백엔드 의존성
 └───frontend/           # React 프론트엔드 애플리케이션
     ├───public/         # 정적 파일 (index.html 등)
     └───src/            # 프론트엔드 소스 코드
@@ -47,14 +60,26 @@ React Lecture/
     npm install
     # 또는 yarn install
     ```
-3.  **애플리케이션 실행:**
-    ```bash
-    cd frontend
-    npm start
-    # 또는 yarn start
-    ```
 
-    애플리케이션은 개발 모드로 실행되며, [http://localhost:3000](http://localhost:3000)에서 확인할 수 있습니다.
+### 프론트엔드 실행
+
+```bash
+cd frontend
+npm start
+# 또는 yarn start
+```
+
+애플리케이션은 개발 모드로 실행되며, [http://localhost:3000](http://localhost:3000)에서 확인할 수 있습니다.
+
+### 백엔드 실행
+
+```bash
+cd backend
+npm start
+# 또는 yarn start
+```
+
+백엔드 서버는 [http://localhost:5000](http://localhost:5000)에서 실행됩니다.
 
 ## 사용 가능한 스크립트
 
