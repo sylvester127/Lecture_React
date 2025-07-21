@@ -6,22 +6,22 @@
 
 ```
 React Lecture/
-├───public/
-└───src/
-    ├───App.js              # 메인 애플리케이션 컴포넌트
-    ├───App2.js             # 폼(Form) 처리 예제
-    ├───App3.js             # Redux 상태 관리 예제
-    ├───App4.js             # React Router 라우팅 예제
-    ├───index.js            # 애플리케이션 진입점
-    ├───assets/             # 이미지, 아이콘 등 정적 자산
-    ├───styles/             # 전역 CSS 파일
-    └───lessons/            # 일별 학습 모듈
-        ├───day1/           # 1일차 학습 내용
-        ├───day2/           # 2일차 학습 내용
-        └───day3/           # 3일차 학습 내용
-            ├───components/ # day3 관련 컴포넌트
-            ├───redux/      # Redux 관련 예제 (actions, reducers)
-            └───router/     # React Router 관련 예제
+├───backend/            # Node.js 백엔드 (나중에 구현)
+└───frontend/           # React 프론트엔드
+    ├───public/
+    ├───src/
+        ├───App.js              # 메인 애플리케이션 (개념별 예제로 이동하는 허브 역할)
+        ├───index.js            # 애플리케이션 진입점
+        ├───assets/             # 이미지, 아이콘 등 정적 자산
+        ├───styles/             # 전역 CSS 파일
+        └───concepts/           # React 개념/기능별 예제
+            ├───basics/         # JSX, 컴포넌트, Props, State, 생명주기, 조건부 렌더링
+            ├───events/         # 이벤트 처리
+            ├───forms/          # 폼 처리
+            ├───lists/          # 리스트와 Key
+            ├───hooks/          # useState, useEffect 등 훅스 (현재 예제 없음, 추후 추가 가능)
+            ├───redux/          # Redux 통합 (actions, reducers 포함)
+            └───routing/        # React Router
 ```
 
 ## 시작하기
@@ -31,7 +31,7 @@ React Lecture/
 1.  **저장소 클론:**
     ```bash
     git clone [저장소 URL]
-    cd React Lecture
+    cd React Lecture/frontend
     ```
 2.  **의존성 설치:**
     ```bash

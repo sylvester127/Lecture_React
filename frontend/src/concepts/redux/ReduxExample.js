@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Counter from './lessons/day3/components/Counter';
 
-export default class App3 extends Component {
+export default class ReduxExample extends Component {
   
   render() {
     return (

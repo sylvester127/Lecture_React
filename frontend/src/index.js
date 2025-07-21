@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import App2 from './App2';
-import App3 from './App3';
+import FormExample from './concepts/forms/FormExample';
+import ReduxExample from './concepts/redux/ReduxExample';
+import RoutingExample from './concepts/routing/RoutingExample';
 import {createStore} from 'redux';
-import reducers from './component/day3/reducers/';
-import * as actions from './lessons/day3/redux/actions';
+import reducers from './concepts/redux/reducers/';
+import * as actions from './concepts/redux/actions';
 import { Provider } from 'react-redux';
-import App4 from './App4';
 
 // element 예제
 // function tick() {
@@ -58,16 +58,16 @@ ReactDOM.render(
     {/* <App /> */}
 
     {/* day3 From 예제 */}
-    {/* <App2 /> */}
+    {/* <FormExample /> */}
 
     {/* Redux 예제 */}
     {/* 컴포넌트에서 Redux를 사용하도록 제공해주는 컴포넌트 */}
     {/* <Provider store={store}>
-      <App3/>
+      <ReduxExample/>
     </Provider> */}
 
     {/* Router 예제 */}
-    <App4/>
+    <RoutingExample/>
   </React.StrictMode>,
   document.getElementById('root')
 );

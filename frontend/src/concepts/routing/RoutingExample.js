@@ -6,7 +6,7 @@ import Page1 from './component/day3/router_lecture/Page1';
 import Menu from './component/day3/router_lecture/Menu';
 import Posts from './lessons/day3/router/router_lecture/Posts';
 
-export default class App4 extends Component {
+export default class RoutingExample extends Component {
   render() {
     return (
       <Router>
