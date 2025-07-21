@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import PhoneForm from './component/day3/PhoneForm';
+import PhoneForm from './lessons/day3/components/PhoneForm';
 
 export default class App2 extends Component {
   

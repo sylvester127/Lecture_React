@@ -4,7 +4,7 @@ import './App.css';
 import Home from './component/day3/router_lecture/Home';
 import Page1 from './component/day3/router_lecture/Page1';
 import Menu from './component/day3/router_lecture/Menu';
-import Posts from './component/day3/router_lecture/Posts';
+import Posts from './lessons/day3/router/router_lecture/Posts';
 
 export default class App4 extends Component {
   render() {

@@ -7,7 +7,7 @@ import App2 from './App2';
 import App3 from './App3';
 import {createStore} from 'redux';
 import reducers from './component/day3/reducers/';
-import * as actions from './component/day3/actions';
+import * as actions from './lessons/day3/redux/actions';
 import { Provider } from 'react-redux';
 import App4 from './App4';
 

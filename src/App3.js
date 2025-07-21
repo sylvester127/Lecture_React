@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Counter from './component/day3/Counter';
+import Counter from './lessons/day3/components/Counter';
 
 export default class App3 extends Component {
   

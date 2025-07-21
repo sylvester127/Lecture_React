@@ -8,7 +8,7 @@ import Comment2 from './component/day2/Comment2';
 import Comment3 from './component/day2/Comment3';
 import Lifecycle from './component/day2/Lifecycle';
 import Toggle from './component/day2/Toggle';
-import AttendanceBook from './component/day2/AttendanceBook';
+import AttendanceBook from './lessons/day2/AttendanceBook';
 
 // Comment 데이터를 별도의 객체로 분리
 // const comments = [
