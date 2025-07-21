@@ -74,9 +74,8 @@ npm start
 ### 백엔드 실행
 
 ```bash
-cd backend
-npm start
-# 또는 yarn start
+npm run start:backend
+# 또는 yarn start:backend
 ```
 
 백엔드 서버는 [http://localhost:5000](http://localhost:5000)에서 실행됩니다.
